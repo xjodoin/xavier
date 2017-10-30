@@ -8,7 +8,7 @@ before_install:
 
 script:
   - docker run -v $(pwd):$(pwd) -w $(pwd) xjodoin/hugo
-  - docker build -t xjodoin/xavier .
+  # - docker build -t xjodoin/xavier .
 
 # after_success:
 #   - if [ "$TRAVIS_BRANCH" == "master" ]; then
